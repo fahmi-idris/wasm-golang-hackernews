@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    color: #828282;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+ul {
+    list-style-type: none;
+    background: rgb(246, 246, 239);
+    margin: 0;
+    padding: 35px 55px;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: decimal;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul li div {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 7pt;
+    color: #828282;
+    margin-top: 5px;
+}

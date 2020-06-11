@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Golang Web Assembly Examples</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script src="wasm_exec.js"></script>
+    <script type="text/javascript">
+        (async () => {
+            const go = new Go();
+            let { module, instance } = await WebAssembly.instantiateStreaming(fetch("go.wasm"), go.importObject);
+            await go.run(instance);
+            instance = await WebAssembly.instantiate(module, go.importObject);
+        })();
+    </script>
+</body>
+</html>
